@@ -107,7 +107,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.5.1)
     rexml (3.2.4)
-    sassc (2.4.0)
+    sassc (2.2.0)
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.8.2)
@@ -130,6 +130,7 @@ DEPENDENCIES
   middleman-livereload
   nokogiri
   redcarpet (~> 3.3, >= 3.3.3)
+  sassc (= 2.2.0)
   tzinfo-data
   wdm (~> 0.1)
 
