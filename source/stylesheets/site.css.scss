@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 18vh 1rem;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a.twitter {
+  &:focus,
+  &:hover {
+    color: #1DA1F2;
+  }
+}
+
+a.instagram {
+  &:focus,
+  &:hover {
+    color: #8a3ab9;
+  }
+}
