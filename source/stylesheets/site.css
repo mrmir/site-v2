@@ -1,0 +1,46 @@
+body {
+  background-color: #F5F5F5;
+  color: #101010;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 18vh 1rem;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+a {
+	color: #101010;
+}
+
+a.twitter:focus, a.twitter:hover {
+	color: #1da1f2;
+}
+
+a.instagram:focus, a.instagram:hover {
+	color: #8a3ab9;
+}
+
+a.mir {
+  font-size: 1.125em;
+  animation: changeColor 30s ease infinite;
+}
+
+a.mir:focus, a.mir:hover {
+	color: #F5F5F5;
+}
+
+.focused {
+  background-color: #101010;
+}
+
+#secret {
+  color: #F5F5F5;
+}
+
+@keyframes changeColor {
+  33% {
+    color: #8a3ab9;
+  }
+  66% {
+    color: #1da1f2;
+  }
+}
