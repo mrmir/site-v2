@@ -15,6 +15,26 @@ page '/*.txt', layout: false
 
 activate :livereload
 
+activate :directory_indexes
+
+page "/articles/*", :layout => "article"
+
+activate :blog do |blog|
+  blog.name = "coffee"
+  blog.prefix = "coffee"
+  blog.sources = "articles/{year}-{month}-{date}-{title}.html"
+  blog.layout = "coffee"
+  blog.tag_template = "coffee/tag.html"
+  blog.calendar_template = "coffee/calendar.html"
+end
+
+# roast: medium
+# rating: 7
+# roastery: Blue Tokai
+# method: natural
+# notes: guava, pineapple, green apple
+
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

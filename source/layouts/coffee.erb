@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "coffee" %>
+    <%= javascript_include_tag "coffee" %>
+    <%= favicon_tag "images/my-face.png" %>
+  </head>
+  <body>
+    <header><h2><%= current_page.data.title %></h2></header>
+    Roast: <%= current_page.data.tags.split(",").select { |tag| tag.split("-").first == "roast" }.first.split("-").last.to_s %>
+    <br>
+    Roastery: <%= current_page.data.tags.split(",").select { |tag| tag.split("-").first.strip == "roastery" }.first.split("-").last.to_s %>
+    <br>
+    Rating: <%= current_page.data.tags.split(",").select { |tag| tag.split("-").first.strip == "rating" }.first.split("-").last.to_s %>
+    <br>
+    Process: <%= current_page.data.tags.split(",").select { |tag| tag.split("-").first.strip == "process" }.first.split("-").last.to_s %>
+    <br>
+    Notes: <%= current_page.data.tags.split(",").select { |tag| tag.split("-").first.strip == "notes" }.map { |note| note.split("-").last }.join(", ") %>
+  </body>
+</html>

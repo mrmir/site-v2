@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="column">
+    <h2>Roast:</h2>
+    <% blog.tags.each do |tag, articles| %>
+      <% if tag.split("-").first == "roast"  %>
+        <%= link_to "#{tag.split("-").last} (#{articles.size})", tag_path(tag) %>
+      <% end %>
+    <% end %>
+    <br>
+    <h2>Roastery:</h2>
+    <% blog.tags.each do |tag, articles| %>
+      <% if tag.split("-").first == "roastery"  %>
+        <%= link_to "#{tag.split("-").last} (#{articles.size})", tag_path(tag) %>
+      <% end %>
+    <% end %>
+    <br>
+    <h2>Rating:</h2>
+    <% blog.tags.each do |tag, articles| %>
+      <% if tag.split("-").first == "rating"  %>
+        <%= link_to "#{tag.split("-").last} (#{articles.size})", tag_path(tag) %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="column">
+    <h2>Process:</h2>
+    <% blog.tags.each do |tag, articles| %>
+      <% if tag.split("-").first == "process"  %>
+        <%= link_to "#{tag.split("-").last} (#{articles.size})", tag_path(tag) %>
+      <% end %>
+    <% end %>
+    <br>
+    <h2>Notes:</h2>
+    <% blog.tags.each do |tag, articles| %>
+      <% if tag.split("-").first == "notes"  %>
+        <%= link_to "#{tag.split("-").last} (#{articles.size})", tag_path(tag) %>
+      <% end %>
+    <% end %>
+    <br>
+
+  </div>
+</div>
