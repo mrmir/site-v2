@@ -69,3 +69,7 @@ a.mir:focus, a.mir:hover {
     width: 100%;
   }
 }
+
+h2 {
+  display: inline-block;
+}
