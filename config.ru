@@ -8,4 +8,4 @@ use ::Rack::TryStatic,
 run lambda {
   not_found_page = File.expand_path('../build/404.html', __FILE__)
   [404, {'Content-Type' => 'text/html'}, [File.read(not_found_page)]]
-}j
+}
