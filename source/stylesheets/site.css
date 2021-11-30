@@ -53,9 +53,9 @@ a.mir:focus, a.mir:hover {
   color: #F5F5F5;
 }
 
-#secret2 {
+/* #secret2 {
   color: #F5F5F5;
-}
+} */
 
 @keyframes changeColor {
   33% {
